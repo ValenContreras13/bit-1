@@ -1,0 +1,102 @@
+/* GLOBALES */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#barra-nav{
+  font-size: rem;
+  margin-right: 4rem;
+}
+
+.text-dark {
+  font-size: 1.3rem;  /* Tamaño de fuente */
+  padding: 0.5rem 1rem;  /* Espaciado dentro de los enlaces */
+  margin-right: 3rem;  /* Espacio derecho entre los enlaces (ajustado) */
+  display: inline-flex;  /* Usar flexbox dentro del enlace */
+  align-items: center;  /* Centra el contenido verticalmente */
+  justify-content: center;  /* Centra el texto horizontalmente */
+  
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;    /* hace que se ajusten en pantallas pequeñas */
+  gap: 2rem;          /* espacio entre imágenes */
+  padding: 1rem;
+}
+
+.model-img {
+  width: 100%;
+  max-width: 370px;   /* ancho máximo en pantallas grandes */
+  height: 500px;       /* ajusta altura automáticamente */
+  border-radius: 42px;
+  box-shadow: 0 4px 15px rgba(2, 2, 2, 0.9);
+}
+.comu:hover, .cue:hover {
+  background-color: #d8d8d8;  /* Cambia el color de fondo al hacer hover */
+  color: #fff;                /* Cambia el color del texto */
+  border-color: #2e1b0d;      /* Cambia el color del borde */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  /* Añade sombra al hacer hover */
+}
+
+.ros:hover, .ojo:hover,.lab:hover {
+  background-color: hsl(315, 89%, 93%);  /* Cambia el color de fondo al hacer hover */
+  color: hsl(0, 0%, 0%);                /* Cambia el color del texto */
+  border-color: #8c00ff;      /* Cambia el color del borde */
+  box-shadow: 0 8px 20px rgba(215, 54, 255, 0.1);  /* Añade sombra al hacer hover */
+  border-radius: 15%;
+}
+
+.hr {
+  border: 0;
+  height: 5px; /* Ajusta el grosor de la línea */
+  background-color:black; /* Color de la línea */
+  /* width: 80%; /* Puedes ajustar el ancho */
+  margin: 30px auto; /* Espacio alrededor de la línea 
+  border-radius: 10px; Bordes redondeados */
+}
+
+.info h2{
+  font-family: 'Changa One', cursive;
+  font-weight: 400; /* Regular */
+  font-size: 70px;
+  text-align: center;
+  color: black;
+}
+
+.parr p{
+  font-family: 'Roboto Flex', cursive;
+  font-weight: 400; /* Regular */
+  color: black;
+   font-size: 18px; 
+  padding: 8px;
+}
+.titulo h3{
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-weight: 400; /* Regular */
+  color: black;
+  font-size: 40px;
+}
+
+.parr1 p, .parr2 p, .parr3 p {
+  font-family: 'Roboto Flex', cursive;
+  font-weight: 400; /* Regular */
+  color: black;
+  font-size: 18px;
+  background-color: #D9D9D9;
+  padding: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.9);
+  margin: 0;
+}
+
+.model {
+  width: 100%;
+  max-width: 470px;
+  aspect-ratio: 470 / 540; /* mantiene la proporción original */
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.9);
+  border-radius: 8px; /* opcional */
+}
