@@ -392,26 +392,28 @@ background: radial-gradient(circle, rgba(90, 70, 54, 1) 0%, rgba(255, 254, 250, 
   align-items: center;
 }
 
-.rostro{
+.rostro,.ojos,.labial{
   width: 100%;
   height: auto;
 }
 
-.title1{
+.pro{
   font-family: 'Changa One', cursive;
   text-align: center;
   color: #000000;
   font-weight: 400;
-  font-size: px;
+  font-size: 300px;
 }
 
 .filtros {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
   padding: 20px;
+  background-color: #E5BC9A;
   font-family: 'Saira Extra Condensed', sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 900;
 }
 
@@ -435,7 +437,7 @@ background: radial-gradient(circle, rgba(90, 70, 54, 1) 0%, rgba(255, 254, 250, 
 }
 
 .filtros div:hover {
-  background-color: #F5C298;
+  background-color: #cf8b53;
 }
 
 .productos col{
@@ -497,7 +499,7 @@ width: 100px;
   font-family: 'Saira Extra Condensed', sans-serif;
 }
 
-.frase{
+.frase,.frase1,.frase2{
   padding: 40px;
 }
 .frase button{
@@ -516,3 +518,180 @@ width: 100px;
   font-family: 'Roboto Flex', cursive;
   font-weight: 900; 
 }
+
+.frase1 button{
+  width: 140px;
+  height: 70px;
+  font-size: 25px;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  background-color: #5A4636;
+  border: 2px #000000;
+  color: #ffffff;
+  justify-content: center;
+}
+
+.frase1 p{
+  color: #5A4636;
+  font-family: 'Roboto Flex', cursive;
+  font-weight: 900; 
+}
+
+.frase2 button{
+  width: 140px;
+  height: 70px;
+  font-size: 25px;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  background-color: #804000;
+  border: 2px #000000;
+  color: #ffffff;
+  justify-content: center;
+}
+
+.frase2 p{
+  color: #804000;
+  font-family: 'Roboto Flex', cursive;
+  font-weight: 900; 
+}
+
+
+
+.filtros1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+  background-color: #5A4636;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.filtros1 div {
+  background-color: #fdfdfd;
+  padding: 15px 40px; /* Más padding horizontal y vertical */
+  border: 2px solid #000;
+  color: #000000;
+  border-radius: 50px; 
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 160px; /* Ancho mínimo para mantener proporción */
+  text-align: center;
+}
+
+.filtros1 div p {
+  margin: 0; /* Quita márgenes por defecto */
+}
+
+.filtros1 div:hover {
+  background-color: #F5C298;
+}
+.esika img{
+  width: 76px;
+}
+/* .ruby img{
+  width: 90px;
+} */
+.sheglam img{
+  width: 73px;
+}
+.ruby img{
+  width: 124px;
+}
+.sheglam img{
+  width: 95px;
+}
+.wet img,.vogue img{
+  width: 100px;
+}
+
+.kkw img{
+  width: 95px;
+}
+
+.pink img{
+  width: 90px;
+}
+.mariana img,.huda img{
+  width: 160px;
+  }
+
+  .stila img{
+    width: 180px;
+    }
+
+  .revolution img{
+    width: 140px;
+  }
+  .el img{
+    width: 150px;
+  }
+
+  
+.filtros2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+  background-color: #000000;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.filtros2 div {
+  background-color: #fdfdfd;
+  padding: 15px 40px; /* Más padding horizontal y vertical */
+  border: 2px solid #000;
+  color: #804000;
+  border-radius: 50px; 
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 160px; /* Ancho mínimo para mantener proporción */
+  text-align: center;
+}
+
+.filtros2 div p {
+  margin: 0; /* Quita márgenes por defecto */
+}
+
+.filtros2 div:hover {
+  background-color: #eecbaf;
+}
+
+.reylon img{
+  width: 80px;
+}
+.glossier img{
+  width: 65px;
+}
+.okwu img{
+  width: 73px;
+}
+
+.creations img{
+  width: 71px;
+}
+.labm img{
+  width: 130px;
+}
+
+.gdior img,.gruby img,.rhode img,.lancome img, .carbare img{
+  width: 115px;
+}
+.lip img{
+  width: 150px;
+}
+
+.telf img{
+  width: 143px;
+}
+
+
