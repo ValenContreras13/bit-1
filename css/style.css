@@ -392,3 +392,127 @@ background: radial-gradient(circle, rgba(90, 70, 54, 1) 0%, rgba(255, 254, 250, 
   align-items: center;
 }
 
+.rostro{
+  width: 100%;
+  height: auto;
+}
+
+.title1{
+  font-family: 'Changa One', cursive;
+  text-align: center;
+  color: #000000;
+  font-weight: 400;
+  font-size: px;
+}
+
+.filtros {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.filtros div {
+  background-color: #000000;
+  padding: 15px 40px; /* Más padding horizontal y vertical */
+  border: 2px solid #000;
+  color: #ffffff;
+  border-radius: 50px; 
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 160px; /* Ancho mínimo para mantener proporción */
+  text-align: center;
+}
+
+.filtros div p {
+  margin: 0; /* Quita márgenes por defecto */
+}
+
+.filtros div:hover {
+  background-color: #F5C298;
+}
+
+.productos col{
+  padding: 8px;
+  align-items: center;
+  border-radius: 20%;
+  background-color: #dad6d6;
+  border: 2px solid #000000;  
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-size: 22px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.col:hover {
+  transform: scale(1.1);
+}
+
+.dior img,.nars img,.touche img,.milk img, .rare img{
+width: 100px;
+}
+
+.elf img,.fenty img{
+  width: 63px;
+}
+.easer img{
+  width: 90px;
+}
+
+.beauty img{
+  width: 78px;
+}
+
+.rare img{
+  width: 120px;
+}
+
+.laura img{
+  width: 172px;
+}
+.creat img,.compacto img{
+  width: 200px;
+}
+.title{
+  font-family: 'Saira Extra Condensed', sans-serif;
+  color: #5A4636;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.precio{
+  font-family: 'Saira Extra Condensed', sans-serif;
+  color: #000000;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.productos button{
+  background-color: #5A4636;
+  border: #000;
+  font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+.frase{
+  padding: 40px;
+}
+.frase button{
+  width: 140px;
+  height: 70px;
+  font-size: 25px;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  background-color: #F5C298;
+  border: 2px #000000;
+  color: #000000;
+  justify-content: center;
+}
+
+.frase p{
+  color: #804000;
+  font-family: 'Roboto Flex', cursive;
+  font-weight: 900; 
+}
