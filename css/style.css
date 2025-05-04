@@ -187,13 +187,37 @@ background: radial-gradient(circle, rgba(90, 70, 54, 1) 0%, rgba(255, 254, 250, 
   text-align: center;
 }
 
-.avatar img {
-  width: 200px;
-  height: 200px;
+
+.avatar {
+  position: relative;
+  width: 120px; /* o el tamaño que prefieras */
+  height: 120px;
+  margin: 0 auto;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 0.5rem;
+  border: 4px solid #000;
 }
+
+.icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  border: 2px solid #000;
+  cursor: pointer;
+  padding: 3px;
+  box-sizing: border-box;
+}
+
+
 
 .username {
   margin: 0.25rem 0;
@@ -243,32 +267,34 @@ background: radial-gradient(circle, rgba(90, 70, 54, 1) 0%, rgba(255, 254, 250, 
   height: 300px;
 } */
 
-.card1,.card {
-  /* background: #fff; */
+.card1, .card {
   border-radius: 8px;
   padding: 0.75rem;
-  /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
   text-align: center;
   width: 100%;
-  height: 300px;
+  height: auto; /* Cambiado para permitir crecer según contenido */
 }
-.card1 p{
+
+.card1 p {
   font-family: 'Changa One', cursive;
-  font-weight: 400; /* Regular */
+  font-weight: 400;
   font-size: 40px;
+  margin-bottom: 1rem;
 }
+
 .card1 img {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 6px;
-  margin-bottom: 0.5rem;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-
+  margin: 0.5rem;
+  transition: transform 0.3s ease;
 }
-.card1:hover {
-  transform: scale(1.1);
 
+.card1 img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
+
 
 .form-container button {
   width: 100%;
@@ -355,13 +381,6 @@ background: radial-gradient(circle, rgba(90, 70, 54, 1) 0%, rgba(255, 254, 250, 
 }
 
 
-.input {
-  margin-top: 10px; /* Espacio entre el input y el texto de ayuda */
-  background-color: #e9e9e9; 
-  border: 2px solid #000000;
-  border-radius: 5px;  
-}
-
 .form-text {
   margin-top: 5px; /* Espacio adicional entre input y texto */
   border-color: #000;
@@ -380,6 +399,10 @@ background: radial-gradient(circle, rgba(90, 70, 54, 1) 0%, rgba(255, 254, 250, 
   /* width: 400px;
   height: 450px; */
   border: 3px solid #D6935D;  
+}
+
+.olv {
+  background-color: #D6935D !important; /* Esto anularía btn-primary */
 }
 
 .btn-custom {
@@ -694,4 +717,23 @@ width: 100px;
   width: 143px;
 }
 
+.boton-flotante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
 
+.boton-flotante img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.boton-flotante:hover {
+  transform: scale(1.1);
+}
