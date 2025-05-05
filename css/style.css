@@ -5,6 +5,13 @@
   box-sizing: border-box;
 }
 
+h3{
+  font-family: 'Changa One', cursive;
+  font-weight: 400; /* Regular */
+  font-size: 40px;
+  text-align: center;
+  color: black;
+}
 #barra-nav{
   font-size: rem;
   margin-right: 4rem;
@@ -402,7 +409,7 @@ background: radial-gradient(circle, rgba(90, 70, 54, 1) 0%, rgba(255, 254, 250, 
 }
 
 .olv {
-  background-color: #D6935D !important; /* Esto anularía btn-primary */
+  color: #9c6f4a !important; /* Esto anularía btn-primary */
 }
 
 .btn-custom {
@@ -736,4 +743,20 @@ width: 100px;
 
 .boton-flotante:hover {
   transform: scale(1.1);
+}
+
+.cui{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tend{
+background-color: #ffffff;
+border-color: #ffffff;
+transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.tend:hover {
+  transform: scale(1.08) translateY(-5px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
 }
