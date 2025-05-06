@@ -13,3 +13,4 @@ form.addEventListener("submit", (event) => {
   const result = `${email}, bienvenido a nuestra plataforma`;
   alert(result);
 });
+
