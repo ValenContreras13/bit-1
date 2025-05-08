@@ -16,52 +16,52 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg" style="background: linear-gradient(to right, #fff, #7e5435);">
-            <div class="container-fluid">
-          
-              <!-- Logo -->
-              <a class="navbar-brand" href="index.html">
-                <img src="./assets/logo.png" alt="Logo" width="100" height="80">
-              </a>
-          
-              <!-- Botón hamburguesa -->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-          
-              <!-- Contenido colapsable -->
-              <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-                
-                <!-- Enlaces -->
-                <div class="d-flex gap-4 align-items-center" style="font-family: 'Saira Extra Condensed', sans-serif;">
-                  <a class="btn text-dark fw-bold text-uppercase" href="comunidad.html">COMUNIDAD</a>
-                  <a class="btn text-dark fw-bold text-uppercase" href="cuenta.html">CUENTA</a>
-                </div>
-          
-                <!-- Buscador -->
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                  <button class="btn btn-dark" type="submit">
-                    <img src="./assets/icono.png" alt="Buscar" width="20" style="filter: brightness(0) invert(1);" />
-                  </button>
-                </form>
-          
-              </div>
+      <nav class="navbar navbar-expand-lg" style="background: linear-gradient(to right, #fff, #7e5435);">
+        <div class="container-fluid">
+      
+          <!-- Logo -->
+          <a class="navbar-brand" href="index.html">
+            <img src="./assets/logo.png" alt="Logo" width="120px" height="100px">
+          </a>
+      
+          <!-- Botón hamburguesa -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <!-- Contenido colapsable -->
+          <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            
+            <!-- Enlaces -->
+            <div class="d-flex gap-4 align-items-center" style="font-family: 'Saira Extra Condensed', sans-serif;font-size: 40px;">
+              <a class="btn shadow text-dark fw-bold text-uppercase" href="comunidad.html">COMUNIDAD</a>
+              <a class="btn shadow text-dark fw-bold text-uppercase" href="cuenta.html">CUENTA</a>
             </div>
-          </nav>
+      
+            <!-- Buscador -->
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+              <button class="btn btn-dark" type="submit">
+                <img src="./assets/icono.png" alt="Buscar" width="20" style="filter: brightness(0) invert(1);" />
+              </button>
+            </form>
+      
+          </div>
+        </div>
+      </nav>
         </header>
           
             <!-- Subnavegador -->
-            <nav class="border-top border-dark border-2" style="background-color: #f5aaf5; font-family: 'Saira Extra Condensed', sans-serif;">
+            <nav class="border-top border-dark border-2" style="font-family: 'Saira Extra Condensed', sans-serif;">
               <div class="container">
-                <div class="d-flex flex-wrap justify-content-center gap-3 py-2">
-                  <a class="ros text-dark fw-bold text-uppercase text-decoration-none" href="#">Rostro</a>
-                  <a class="ojo text-dark fw-bold text-uppercase text-decoration-none" href="ojos.html">Ojos</a>
-                  <a class="lab text-dark fw-bold text-uppercase text-decoration-none" href="labios.html">Labios</a>
+                <div class="btn d-flex flex-wrap justify-content-center gap-3 py-2">
+                  <a class="btn ros text-dark shadow fw-bold text-uppercase text-decoration-none" style="background-color: #f5aaf5;width: 200px;border: 2px solid #ad52ac;font-size: 23px;" href="rostro.html">Rostro</a>
+                  <a class="btn ojo text-dark shadow fw-bold text-uppercase text-decoration-none" style="background-color: #f5aaf5; width: 200px;border: 2px solid #ad52ac;font-size: 23px;" href="ojos.html">Ojos</a>
+                  <a class="btn lab text-dark shadow fw-bold text-uppercase text-decoration-none" style="background-color: #f5aaf5;width: 200px;border: 2px solid #ad52ac;font-size: 23px;" href="labios.html">Labios</a>
                 </div>
               </div>
             </nav>
-            <div class="border-top border-dark border-2"></div>
+            <!-- <div class="border-top border-dark border-2"></div> -->
             
             <!-- FONDO -->
             <aside>
@@ -103,101 +103,95 @@
                 <h2>PRODUCTOS</h2>
               </section>
              <section class="filtros">
-              <div>
-                <p>BASE</p>
-              </div>
-              <div>
-                <p>CORRECTOR</p>
-              </div>
-              <div>
-                <p>CORRECTOR</p>
-              </div>
-              <div>
-                <p>POLVO COMPACTO</p>
-              </div>
+              <div onclick="filtrar('todos')"><p>TODOS</p></div>
+              <div onclick="filtrar('base')"><p>BASE</p></div>
+              <div onclick="filtrar('corrector')"><p>CORRECTOR</p></div>
+              <div onclick="filtrar('primer')"><p>PRIMER</p></div>
+              <div onclick="filtrar('polvo')"><p>POLVO</p></div>
+
              </section>
             <br>
             <section class="productos">
               <div class="container text-center my-4">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-                  <div class="col dior">
+                  <div class="col base dior">
                     <p class="title">BASE DIOR</p>
                     <img src="./assets/base1.PNG" class="img-fluid" alt="base1">
                     <p class="mt-2 precio">$ 203.500 COP</p>
                     <button onclick="alert('Producto agregado al carrito')" class="btn btn-primary btn-lg">AGREGAR AL CARRITO</button>
                   </div>
                   
-                  <div class="col nars">
+                  <div class="col base nars">
                     <p class="title">BASE NARS</p>
                     <img src="./assets/base2.PNG" class="img-fluid" alt="base2">
                     <p class="mt-2 precio">$ 180.000 COP</p>
                     <button onclick="alert('Producto agregado al carrito')" class="btn btn-primary btn-lg">AGREGAR AL CARRITO</button>
                   </div>
                   
-                  <div class="col touche">
+                  <div class="col base touche">
                     <p class="title">BASE TOUCHE ECLAT</p>
                     <img src="./assets/base3.PNG" class="img-fluid" alt="base3">
                     <p class="mt-2 precio">$ 324.897 COP</p>
                     <button onclick="alert('Producto agregado al carrito')" class="btn btn-primary btn-lg">AGREGAR AL CARRITO</button>
                   </div>
 
-                  <div class="col milk">
+                  <div class="col primer milk">
                     <p class="title">PRIMER MILK</p>
                     <img src="./assets/primer1.PNG" class="img-fluid" alt="primer1">
                     <p class="mt-2 precio">$ 34.678 COP</p>
                     <button onclick="alert('Producto agregado al carrito')" class="btn btn-primary btn-lg">AGREGAR AL CARRITO</button>
                   </div>
 
-                  <div class="col elf">
+                  <div class="col primer elf">
                     <p class="title">PRIMER ELF</p>
                     <img src="./assets/primer2.PNG" class="img-fluid" alt="primer2">
                     <p class="mt-2 precio">$ 23.898 COP</p>
                     <button onclick="alert('Producto agregado al carrito')" class="btn btn-primary btn-lg">AGREGAR AL CARRITO</button>
                   </div>
 
-                  <div class="col fenty">
+                  <div class="col primer fenty">
                     <p class="title">PRIMER FENTY BEATY</p>
                     <img src="./assets/primer3.PNG" class="img-fluid" alt="primer3">
                     <p class="mt-2 precio">$ 56.567 COP</p>
                     <button onclick="alert('Producto agregado al carrito')" class="btn btn-primary btn-lg">AGREGAR AL CARRITO</button>
                   </div>
 
-                  <div class="col easer">
+                  <div class="col corrector easer">
                     <p class="title">CORRECTOR ERASER</p>
                     <img src="./assets/corrector1.PNG" class="img-fluid" alt="corrector1">
                     <p class="mt-2 precio">$45.876 COP</p>
                     <button onclick="alert('Producto agregado al carrito')" class="btn btn-primary btn-lg">AGREGAR AL CARRITO</button>
                   </div>
 
-                  <div class="col rare">
+                  <div class="col corrector rare">
                     <p class="title">CORRECTOR RARE BEAUTY</p>
                     <img src="./assets/corrector2.PNG" class="img-fluid" alt="corrector2">
                     <p class="mt-2 precio">$ 76.987 COP</p>
                     <button onclick="alert('Producto agregado al carrito')" class="btn btn-primary btn-lg">AGREGAR AL CARRITO</button>
                   </div>
 
-                  <div class="col beauty">
+                  <div class="col corrector beauty">
                     <p class="title">CORRECTOR BEAUTY CREAT</p>
                     <img src="./assets/corrector3.PNG" class="img-fluid" alt="corrector3">
                     <p class="mt-2 precio">$ 34.789 COP</p>
                     <button onclick="alert('Producto agregado al carrito')" class="btn btn-primary btn-lg">AGREGAR AL CARRITO</button>
                   </div>
                   
-                  <div class="col creat">
+                  <div class="col polvo creat">
                     <p class="title">POLVO BEAUTY CREAT</p>
                     <img src="./assets/polvo1.PNG" class="img-fluid" alt="polvo1">
                     <p class="mt-2 precio">$ 24.898 COP</p>
                     <button onclick="alert('Producto agregado al carrito')" class="btn btn-primary btn-lg">AGREGAR AL CARRITO</button>
                   </div>
 
-                  <div class="col laura">
+                  <div class="col polvo laura">
                     <p class="title">POLVO LAURA MERCIER</p>
                     <img src="./assets/polvo2.PNG" class="img-fluid" alt="polvo2">
                     <p class="mt-2 precio">$ 45.987 COP</p>
                     <button onclick="alert('Producto agregado al carrito')" class="btn btn-primary btn-lg">AGREGAR AL CARRITO</button>
                   </div>
 
-                  <div class="col compacto">
+                  <div class="col polvo compacto">
                     <p class="title">POLVO COMPACTO</p>
                     <img src="./assets/polvo3.PNG" class="img-fluid" alt="polvo3">
                     <p class="mt-2 precio">$ 16.898 COP</p>
@@ -211,37 +205,48 @@
              
             </main>
             <div class="border-top border-dark border-2"></div>
-            <footer class="bg-dark text-black py-4" style=" font-family: 'Roboto Flex', cursive;font-weight: 600;">
-              <div class="container">
-                <div class="row align-items-center justify-content-between">
-                  <!-- Left column: contact info -->
-                  <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <p class="mb-1">Ubicación: Calle 25 #45-89, Medellín, Colombia</p>
-                    <p class="mb-1">WhatsApp: +57 312 456 7890</p>
-                    <p class="mb-0">Email: <a href="mailto:contacto@glowup.com" class="text-black">contacto@glowup.com</a></p>
-                  </div>
             
-                  <!-- Right column: social icons -->
-                  <div class="col-md-6 text-center text-md-end">
-                    <span class="fw-bold d-block mb-2">¡Síguenos!</span>
-                    <div class="d-inline-flex align-items-center gap-3">
-                      <a href="https://www.facebook.com/valentina.contrerasribon/" target="_blank" aria-label="Facebook">
-                        <img src="./assets/face1.png" alt="Facebook" style="width: 32px;">
-                      </a>
-                      <a href="https://w.app/z7srtd" target="_blank" aria-label="WhatsApp">
-                        <img src="./assets/wa1.png" alt="WhatsApp" style="width: 32px;">
-                      </a>
-                      <a href="https://www.instagram.com/valentina_contreras2103/" target="_blank" aria-label="Instagram">
-                        <img src="./assets/ins1.png" alt="Instagram" style="width: 32px;">
-                      </a>
-                      <a href="https://github.com/ValenContreras13" target="_blank" aria-label="GitHub">
-                        <img src="./assets/git1.png" alt="GitHub" style="width: 32px;">
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </footer>
-           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <footer class="bg-dark text-black py-4" style=" font-family: 'Roboto Flex', cursive;font-weight: 600;">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+                  <!-- Columna izquierda: información de contacto -->
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <a href="https://www.google.com.mx/maps/search/Ubicaci%C3%B3n:+Calle+25+%2345-89,+Medell%C3%ADn,+Colombia/@6.2273227,-75.577171,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDUwMy4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" style="text-decoration: none; color: inherit;">
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <img src="./assets/ubicacion.png" alt="ubicacion" style="width: 30px; height: 30px;">
+              <p class="mb-1 mb-0">Ubicación: Calle 25 #45-89, Medellín, Colombia</p>
+            </div>
+          </a>
+
+          <div style="display: flex; align-items: center; gap: 10px; margin-top: 10px;">
+            <img src="./assets/emai.png" alt="email" style="width: 30px; height: 30px;">
+            <a href="mailto:contacto@glowup.com" style="text-decoration: none; color: inherit;">contacto@glowup.com</a>
+          </div>
+        </div>
+
+  
+          <!-- Right column: social icons -->
+          <div class="col-md-6 text-center text-md-end">
+            <span class="fw-bold d-block mb-2">¡Síguenos!</span>
+            <div class="d-inline-flex align-items-center gap-3">
+              <a href="https://www.facebook.com/valentina.contrerasribon/" target="_blank" aria-label="Facebook">
+                <img src="./assets/face1.png" alt="Facebook" style="width: 32px;">
+              </a>
+              <a href="https://w.app/z7srtd" target="_blank" aria-label="WhatsApp">
+                <img src="./assets/wa1.png" alt="WhatsApp" style="width: 32px;">
+              </a>
+              <a href="https://www.instagram.com/valentina_contreras2103/" target="_blank" aria-label="Instagram">
+                <img src="./assets/ins1.png" alt="Instagram" style="width: 32px;">
+              </a>
+              <a href="https://github.com/ValenContreras13" target="_blank" aria-label="GitHub">
+                <img src="./assets/git1.png" alt="GitHub" style="width: 32px;">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/categoria.js"></script>
 </body>
 </html>
