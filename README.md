@@ -9,5 +9,9 @@ Desde ideas para tu día a día hasta propuestas más arriesgadas, GlowUp busca 
 🌈✨ **Bienvenid@ a GlowUp**, donde cada look cuenta una historia y cada detalle brilla con propósito.
 
 ---
+Autor: Valentina Contreras Ribon
+---
+
+
 #### DISEÑO INICIAL
 ![logo](./assets/diseno.png)

@@ -518,8 +518,11 @@ background: radial-gradient(circle, rgba(90, 70, 54, 1) 0%, rgba(255, 254, 250, 
 .col:hover {
   transform: scale(1.1);
 }
+.milk img{
+  width: 95px;
+}
 
-.dior img,.nars img,.touche img,.milk img, .rare img{
+.dior img,.nars img,.touche img, .rare img{
 width: 100px;
 }
 
@@ -733,17 +736,23 @@ width: 100px;
   width: 65px;
 }
 .okwu img{
-  width: 73px;
+  width: 68px;
 }
 
 .creations img{
-  width: 71px;
+  width: 68px;
 }
 .labm img{
   width: 130px;
 }
+.lancome img{
+  width: 120px;
+}
+.carbare img{
+  width: 105px;
+}
 
-.gdior img,.gruby img,.rhode img,.lancome img, .carbare img{
+.gdior img,.gruby img,.rhode img{
   width: 115px;
 }
 .lip img{
