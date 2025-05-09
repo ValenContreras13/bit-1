@@ -44,6 +44,33 @@ h3{
   letter-spacing: 2px; 
 }
 
+.btn-custom {
+  background-color: #e86ce8 !important;
+  width: 200px;
+  border: 2px solid #a03ba3 !important;
+  font-size: 23px;
+  color: #060606 !important; /* texto oscuro */
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(160, 59, 163, 0.5) !important;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  text-align: center;
+  padding: 10px 0; /* ajusta altura interna */
+}
+
+.btn-custom:hover {
+  background-color: #d958d9 !important;
+  box-shadow: 0 6px 14px rgba(160, 59, 163, 0.6) !important;
+}
+
+.btn-custom:hover {
+  background-color: #d958d9;
+  box-shadow: 0 6px 14px rgba(160, 59, 163, 0.6);
+}
+
 .model-img {
   width: 100%;
   max-width: 370px;   /* ancho máximo en pantallas grandes */
@@ -357,6 +384,7 @@ background: radial-gradient(circle, rgba(90, 70, 54, 1) 0%, rgba(255, 254, 250, 
     width: 100%;
   }
 }
+
 
 .com p{
   font-family: 'Changa One', cursive;

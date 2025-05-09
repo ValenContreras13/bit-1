@@ -20,7 +20,7 @@
   
       <!-- Logo -->
       <a class="navbar-brand" href="#">
-        <img src="./assets/logo.png" alt="Logo" width="120px" height="100px">
+        <img src="./assets/logo.png" alt="Logo" width="120" height="100"  style="background-color: white; object-fit: cover; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);">
       </a>
   
       <!-- Botón hamburguesa -->
@@ -54,9 +54,9 @@
     <nav class="border-top border-dark border-2" style="font-family: 'Saira Extra Condensed', sans-serif;">
       <div class="container">
         <div class="btn d-flex flex-wrap justify-content-center gap-3 py-2">
-          <a class="btn ros text-dark shadow fw-bold text-uppercase text-decoration-none" style="background-color: #f5aaf5;width: 200px;border: 2px solid #ad52ac;font-size: 23px;" href="rostro.html">Rostro</a>
-          <a class="btn ojo text-dark shadow fw-bold text-uppercase text-decoration-none" style="background-color: #f5aaf5; width: 200px;border: 2px solid #ad52ac;font-size: 23px;" href="ojos.html">Ojos</a>
-          <a class="btn lab text-dark shadow fw-bold text-uppercase text-decoration-none" style="background-color: #f5aaf5;width: 200px;border: 2px solid #ad52ac;font-size: 23px;" href="labios.html">Labios</a>
+          <a class="btn-custom" href="rostro.html">Rostro</a>
+          <a class="btn-custom" href="ojos.html">Ojos</a>
+          <a class="btn-custom" href="labios.html">Labios</a>
         </div>
       </div>
     </nav>
@@ -64,8 +64,8 @@
     <br>
     <!-- MAIN -->
     <main>
-      <!-- SECCION DE IMAGENES -->
-      <section class="box">
+      <!-- SECCION DE VIDEO -->
+      <section class="box d-flex flex-wrap justify-content-center gap-3 py-2">
         <img class="img-fluid model-img" src="./assets/model2.PNG" alt="model2">
         <img class="img-fluid model-img" src="./assets/model1.PNG" alt="model1">
         <img class="img-fluid model-img" src="./assets/model.PNG" alt="model">
@@ -108,101 +108,90 @@
       </section>
       <div class="hr border-top border-dark border-2"></div>
     </main>
-    <aside>
-      <!-- Sección 1: Tips de cuidado de piel -->
-      <section id="tips">
-        <h3>TIPS DE CUIDADO DE PIEL</h3>
-        <div class="container text-center">
-          <div class="row justify-content-center">
-            <!-- Primer div centrado -->
-            <div class="col-12 col-sm-6 col-md-4">
-              <div class="card tend mx-auto" style="width: 18rem;">
-                <video src="./assets/cara.mp4" controls></video>
-                <!-- <img src="./assets/cuidado1.png" class="card-img-top" alt="Limpieza facial"> -->
-                <div class="card-body">
-                  <p class="card-text">Limpia tu rostro dos veces al día para eliminar impurezas.</p>
-                </div>
-              </div>
-            </div>
-    
-            <!-- Segundo div centrado -->
-            <div class="col-12 col-sm-6 col-md-4">
-              <div class="card tend mx-auto" style="width: 18rem;">
-                <video src="./assets/protector.mp4" controls></video>
-                <!-- <img src="./assets/cuidado.png" class="card-img-top" alt="Protector solar"> -->
-                <div class="card-body">
-                  <p class="card-text">Usa protector solar todos los días, incluso si está nublado.</p>
-                </div>
-              </div>
-            </div>
+ <aside class="container-fluid px-3">
+  <!-- TIPS DE CUIDADO DE PIEL -->
+  <section id="tips" class="my-4">
+    <h3 class="text-center mb-3">Tips de Cuidado de Piel</h3>
+    <div class="row g-3 justify-content-center">
+      <!-- Tip 1 -->
+      <div class="col-12 col-sm-10 col-md-4" >
+        <div class="card mx-auto h-100" style="background-color: #fff;border-color: black;">
+          <video src="./assets/cara.mp4" controls class="card-img-top" aria-label="Video sobre limpieza facial"></video>
+          <div class="card-body">
+            <p class="card-text text-center">Limpia tu rostro dos veces al día para eliminar impurezas.</p>
           </div>
         </div>
-      </section>
-      <br>
-      <br>
-      <!-- Sección 2: Productos en tendencia cuidado piel -->
-      <section id="productos">
-        <h3>PRODUCTOS EN TENDENCIA CUIDADO PIEL</h3>
-        <div class="container text-center">
-          <div class="row justify-content-center">
-            <!-- Primer div centrado -->
-            <div class="col-12 col-sm-6 col-md-4">
-              <div class="card tend mx-auto" style="width: 18rem;">
-                <video src="./assets/SkinCeuticals.mp4" controls></video>
-                <!-- <img src="./assets/tendencia1.png" class="card-img-top" alt="SkinCeuticals"> -->
-                <div class="card-body">
-                  <p class="card-text">SkinCeuticals C E Ferulic – Iluminar la piel y reducir signos de envejecimiento.</p>
-                </div>
-              </div>
-            </div>
-    
-            <!-- Segundo div centrado -->
-            <div class="col-12 col-sm-6 col-md-4">
-              <div class="card tend mx-auto" style="width: 18rem;">
-                <video src="./assets/cerave.mp4" controls></video>
-                <!-- <img src="./assets/" class="card-img-top" alt="CeraVe Moisturizing Cream"> -->
-                <div class="card-body">
-                  <p class="card-text">CeraVe Cream – Restaurar la barrera cutánea y mantener la hidratación por 24 horas.</p>
-                </div>
-              </div>
-            </div>
-      </section>
-      <br>
-      <br>
-      <!-- Sección 3: Inspiración y Looks -->
-      <section id="inspiracion">
-        <h3>INSPIRACIÓN Y LOOKS</h3>
-        <div class="container text-center">
-          <div class="row justify-content-center">
-            <!-- Primer div centrado -->
-            <div class="col-12 col-sm-6 col-md-4">
-              <div class="card tend mx-auto" style="width: 18rem;">
-                <video src="./assets/tono1.mp4" controls></video>
-                <!-- <img src="./assets/inspi.png" class="card-img-top" alt="Look natural glow"> -->
-                <div class="card-body">
-                  <p class="card-text">Usar una sola sombra en el párpado, en colores pastel o llamativos, está de moda. Es un estilo inspirado en los años 2000, fácil de aplicar y perfecto tanto para el día a día.</p>
-                </div>
-              </div>
-            </div>
-    
-            <!-- Segundo div centrado -->
-            <div class="col-12 col-sm-6 col-md-4">
-              <div class="card tend mx-auto" style="width: 18rem;">
-                <video src="./assets/mate.mp4" controls></video>
-                <!-- <img src="./assets/inspi1.png" class="card-img-top" alt="Look colorido"> -->
-                <div class="card-body">
-                  <p class="card-text">Los labios con acabado mate y bordes suavemente difuminados ofrecen un aspecto moderno y sofisticado. Esta técnica brinda un efecto más natural y menos definido, un look elegante.</p>
-                </div>
-              </div>
-            </div>
-      </section>
-      <br>
-      <br>
-      <section class="fras">
-          <p>"EL MAQUILLAJE NO ES PARA ESCONDER QUIÉN ERES, SINO PARA RESALTAR LA BELLEZA QUE YA HABITA EN TI. ES UN ACTO DE AMOR PROPIO, NO DE PERFECCIÓN." 😊🤎</p>
-      </section>
-    </main>
-    </aside>
+      </div>
+      <!-- Tip 2 -->
+      <div class="col-12 col-sm-10 col-md-4">
+        <div class="card mx-auto h-100" style="background-color: #fff;border-color: black;">
+          <video src="./assets/protectors.mp4" controls class="card-img-top" aria-label="Video sobre uso de protector solar"></video>
+          <div class="card-body">
+            <p class="card-text text-center">Usa protector solar todos los días, incluso si está nublado.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTOS EN TENDENCIA -->
+  <section id="productos" class="my-4">
+    <h3 class="text-center mb-3">Productos en Tendencia Cuidado Piel</h3>
+    <div class="row g-3 justify-content-center">
+      <!-- Producto 1 -->
+      <div class="col-12 col-sm-10 col-md-4">
+        <div class="card mx-auto h-100" style="background-color: #fff;border-color: black;">
+          <video src="./assets/skinceuticals.mp4" controls class="card-img-top" aria-label="SkinCeuticals C E Ferulic"></video>
+          <div class="card-body">
+            <p class="card-text text-center">SkinCeuticals C E Ferulic – Ilumina la piel y reduce signos de envejecimiento.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Producto 2 -->
+      <div class="col-12 col-sm-10 col-md-4">
+        <div class="card mx-auto h-100" style="background-color: #fff;border-color: black;">
+          <video src="./assets/cerave.mp4" controls class="card-img-top" aria-label="Crema CeraVe"></video>
+          <div class="card-body">
+            <p class="card-text text-center">CeraVe Cream – Restaura la barrera cutánea y mantiene la hidratación por 24 horas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSPIRACIÓN Y LOOKS -->
+  <section id="inspiracion" class="my-4">
+    <h3 class="text-center mb-3">Inspiración y Looks</h3>
+    <div class="row g-3 justify-content-center">
+      <!-- Look 1 -->
+      <div class="col-12 col-sm-10 col-md-4">
+        <div class="card mx-auto h-100"style="background-color: #fff;border-color: black;">
+          <video src="./assets/tono1.mp4" controls class="card-img-top" aria-label="Tendencia de sombra de ojos"></video>
+          <div class="card-body">
+            <p class="card-text text-center">Usar una sola sombra en el párpado, en colores pastel o llamativos, está de moda.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Look 2 -->
+      <div class="col-12 col-sm-10 col-md-4">
+        <div class="card mx-auto h-100" style="background-color: #fff;border-color: black;">
+          <video src="./assets/mate.mp4" controls class="card-img-top" aria-label="Labios mate"></video>
+          <div class="card-body">
+            <p class="card-text text-center">Los labios con acabado mate ofrecen un aspecto moderno y sofisticado.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FRASE FINAL -->
+  <section class="fras text-center my-5 px-3">
+    <p class="fw-bold fs-5">
+      "EL MAQUILLAJE NO ES PARA ESCONDER QUIÉN ERES, SINO PARA RESALTAR LA BELLEZA QUE YA HABITA EN TI. ES UN ACTO DE AMOR PROPIO, NO DE PERFECCIÓN." 😊🤎
+    </p>
+  </section>
+</aside>
+
     <!-- <aside class="carrusel">
        <section class="destacadas">
           <div class="des">
