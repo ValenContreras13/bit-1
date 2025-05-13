@@ -45,15 +45,15 @@ h3{
 }
 
 .btn-custom {
-  background-color: #e86ce8 !important;
+  background-color: #000000 !important;
   width: 200px;
-  border: 2px solid #a03ba3 !important;
+  border: 2px solid #000000 !important;
   font-size: 23px;
-  color: #060606 !important; /* texto oscuro */
+  color: #ffffff !important; /* texto oscuro */
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
-  box-shadow: 0 4px 10px rgba(160, 59, 163, 0.5) !important;
+  box-shadow: 0 4px 10px rgba(82, 42, 9, 0.5) !important;
   border-radius: 12px;
   transition: all 0.3s ease-in-out;
   display: inline-block;
@@ -62,13 +62,35 @@ h3{
 }
 
 .btn-custom:hover {
-  background-color: #d958d9 !important;
-  box-shadow: 0 6px 14px rgba(160, 59, 163, 0.6) !important;
+  background-color: #3b2f18 !important;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.6) !important;
 }
 
 .btn-custom:hover {
-  background-color: #d958d9;
-  box-shadow: 0 6px 14px rgba(160, 59, 163, 0.6);
+  background-color: #704b3a;
+  box-shadow: 0 6px 14px rgba(167, 92, 49, 0.6);
+}
+
+.btn-custom1 {
+  background-color: #41301b !important;
+  width: 200px;
+  border: 2px solid #47351f !important;
+  font-size: 23px;
+  color: #ffffff !important; /* texto oscuro */
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(82, 42, 9, 0.5) !important;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  text-align: center;
+  padding: 5px 0; /* ajusta altura interna */
+}
+
+.btn-custom1:hover {
+  background-color: #704b3a;
+  box-shadow: 0 6px 14px rgba(167, 92, 49, 0.6);
 }
 
 .model-img {
@@ -444,7 +466,7 @@ background: radial-gradient(circle, rgba(90, 70, 54, 1) 0%, rgba(255, 254, 250, 
 }
 
 .olv {
-  color: #9c6f4a !important; /* Esto anularía btn-primary */
+  color: #584230 !important; /* Esto anularía btn-primary */
 }
 
 .btn-custom {
